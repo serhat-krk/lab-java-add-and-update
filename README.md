@@ -62,17 +62,20 @@ Create the following routes as efficiently as possible, using validation where a
 6. **Write a short answer in README.md**. In your `README.md`, write a short answer to the following questions:
 
     - Did you use the same type of route to update patient information as to update an employee's department?
-      **ANSWER:** No. I have used PUT request to update patient information, and PATCH request to update employee department.
     - Why did you choose the selected strategy?
-      **ANSWER:** PUT request allows me to change any variable of the patient. PATCH request can only change the variable defined in the method
     - What are the advantages and disadvantages of the strategies you chose for creating these routes?
-      **ANSWER:** PUT request is easier to code but harder to request, because you just need to build 1 request for all variables.
-                  PATCH request takes longer to prepare since we must build it multiple requests to cover all variables, but the requests will work faster this way.
     - What is the cost-benefit between using `PUT` and `PATCH`?
-      **ANSWER:** PUT Cost: takes longer to process and request
-                  PUT Benefit: no need to create lots of patch request, easier to prepare
-                  PATCH Cost: longer build time to include all variables in different requests
-                  PATCH Benefit: easier to process and request, allows you to change only the intended variables faster
+
+## Answers to Instruction 6
+
+- Did you use the same type of route to update patient information as to update an employee's department?
+  - **ANSWER:** No. I have used PUT request to update patient information, and PATCH request to update employee department.
+- Why did you choose the selected strategy?
+  - **ANSWER:** PUT request allows me to change any variable of the patient. PATCH request can only change the variable defined in the method.
+- What are the advantages and disadvantages of the strategies you chose for creating these routes?
+  - **ANSWER:** PUT request is easier to code but harder to request, because you just need to build 1 request for all variables. PATCH request takes longer to prepare since we must build it multiple requests to cover all variables, but the requests will work faster this way.
+- What is the cost-benefit between using `PUT` and `PATCH`?
+  - **ANSWER:** PUT Cost: takes longer to process and request. PUT Benefit: no need to create lots of patch request, easier to prepare. PATCH Cost: longer build time to include all variables in different requests. PATCH Benefit: easier to process and request, allows you to change only the intended variables faster.
 
 <br>  
 
